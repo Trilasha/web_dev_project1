@@ -1,0 +1,175 @@
+<!-- free stock images(pixbay.com),free website templates(wix.com)-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aisha Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        /* height: 4445px;-->On giving this the image will start repeating */
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+    left: 34px;
+        top: 21px;
+    }
+    .left img{
+        width: 112px;
+        height: 96px;
+        /* we can use invert function of CSS to convert black picture into white or vice-versa */
+        /* filter: invert(100%); */
+    }
+.left div{
+    text-align: center;
+    line-height: 17px;
+    font-size: 20px;
+}
+    .mid {
+        /* border: 2px solid green; */
+ /* To centralize the mid follow the 3 step  */
+ display: block;
+ width: 45%;
+ margin: 20px auto;
+ padding: 7px;
+    }
+
+    .right {
+        /* border: 2px solid yellow; */
+        display: inline-block;
+        /* to let it go to the extreme right set its position to absolute so it will now move relative to its first parents,i.e,the header in this case */
+        position: absolute;
+        right: 34px;
+        top: 21px;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 19px;
+    }
+    .navbar li a{
+        color: white;
+        /* to remove the underlines */
+        text-decoration: none;
+        padding: 30px 23px;
+    }
+    .navbar li a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+    }
+    .btn{
+        margin: 0px 3px;
+        background-color: black;
+        /* though body has been given white colour but buttons didnot inherit so we have to again give seperately */
+        color: white;
+        padding: 2px 10px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 14px;
+        cursor: pointer;
+        /* could not inherit Baloo bhai directly */
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    .btn:hover{
+        background-color: rgb(109, 97, 97);
+    }
+    .container{
+        border: 2px solid white;
+        margin: 127px 29px;
+       padding: 40px 40px;
+       padding-top: 15px;
+       padding-bottom: 21px;
+       width: 33%;
+       border-radius: 28px;
+    }
+    .form-group input{
+        font-family: 'Baloo Bhai 2', cursive;
+        text-align: center;
+        display: block;
+        width:350px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 4px auto;
+        font-size: 19px;
+        border-radius: 9px;
+    }
+    .container h1{
+    text-align: center;
+    }
+    .container .btn{
+       text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 365px;
+        margin: auto;
+        margin-top: 18px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left  box for logo -->
+        <div class="left">
+           <img src="img/logo3.jpg" alt="">
+           <div>Aisha Fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <div class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </div>          
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+     <h1>Join the best gym of Jorhat now</h1>
+     <form action="noaction.php">
+         <div class="form-group">
+             <input type="text" name="" placeholder="Enter your name">
+         </div>
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter your age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your locality">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your contact number">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your emailID">
+        </div>
+     <button class="btn">Submit</button>
+     </form>
+    
+   
+    </div>
+</body>
+</html>
